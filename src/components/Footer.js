@@ -29,9 +29,10 @@ function Footer ({
 	return (
 		<div className={css(classes.footer)} {...props}>
 			{caption ? (
-				<figcaption className={css(classes.footerCaption)}>
+				
+				<textarea className={css(classes.footerCaption)}>
 					{caption}
-				</figcaption>
+				</textarea>
 			) : <span />}
 			{imageCount}
 		</div>
